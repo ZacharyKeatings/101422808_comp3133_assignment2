@@ -1,0 +1,9 @@
+<mat-toolbar color="primary">
+  <span>Employee Portal</span>
+  <span class="spacer"></span>
+  <button *ngIf="auth.isAuthenticated()" mat-button (click)="logout()">Logout</button>
+</mat-toolbar>
+
+<div class="main-container">
+  <router-outlet></router-outlet>
+</div>

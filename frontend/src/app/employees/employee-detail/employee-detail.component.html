@@ -1,0 +1,20 @@
+<div class="employee-detail-container" *ngIf="employee">
+    <mat-card>
+      <h2>{{ employee.first_name }} {{ employee.last_name }}</h2>
+  
+      <div class="info-section">
+        <img *ngIf="employee.employee_photo" [src]="employee.employee_photo" alt="Profile" />
+        <div class="info-grid">
+          <p><strong>Email:</strong> {{ employee.email }}</p>
+          <p><strong>Gender:</strong> {{ employee.gender }}</p>
+          <p><strong>Designation:</strong> {{ employee.designation }}</p>
+          <p><strong>Department:</strong> {{ employee.department }}</p>
+          <p><strong>Salary:</strong> {{ employee.salary | currency }}</p>
+          <p><strong>Date of Joining:</strong> {{ employee.date_of_joining | date }}</p>
+        </div>
+      </div>
+  
+      <button mat-raised-button color="primary" (click)="goBack()">Back to List</button>
+    </mat-card>
+  </div>
+  

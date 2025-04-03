@@ -1,0 +1,40 @@
+.employee-detail-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  
+    mat-card {
+      width: 100%;
+      max-width: 700px;
+      padding: 2rem;
+  
+      h2 {
+        margin-bottom: 1rem;
+      }
+  
+      .info-section {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+  
+        img {
+          width: 150px;
+          height: 150px;
+          object-fit: cover;
+          border-radius: 4px;
+          border: 1px solid #ccc;
+        }
+  
+        .info-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 0.5rem 1rem;
+        }
+      }
+  
+      button {
+        margin-top: 2rem;
+      }
+    }
+  }
+  

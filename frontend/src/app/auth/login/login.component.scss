@@ -1,0 +1,22 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  
+    mat-card {
+      width: 100%;
+      max-width: 400px;
+      padding: 2rem;
+    }
+  
+    .full-width {
+      width: 100%;
+    }
+  
+    .switch-auth {
+      margin-top: 1rem;
+      text-align: center;
+    }
+  }
+  

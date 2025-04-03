@@ -1,0 +1,35 @@
+.employee-form-container {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  
+    mat-card {
+      width: 100%;
+      max-width: 800px;
+      padding: 2rem;
+    }
+  
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+  
+    .file-upload {
+      display: flex;
+      flex-direction: column;
+  
+      input[type='file'] {
+        margin-bottom: 0.5rem;
+      }
+  
+      img {
+        max-width: 150px;
+        max-height: 150px;
+        object-fit: cover;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+    }
+  }
+  
